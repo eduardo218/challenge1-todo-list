@@ -1,0 +1,43 @@
+.tasksContainer {
+
+    .tasksStatus {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.4rem;
+
+        .created, .done {
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            
+            .counter {
+                display: inline-block;
+                padding: .2rem .8rem;
+                border-radius: 20px;
+                background: var(--gray-400);
+                color: var(--gray-100);
+            }
+        }
+
+        .created {
+            color: var(--blue);
+        }
+
+        .done {
+            color: var(--purple);
+        }
+
+        @media (max-width: 375px) {
+            flex-direction: column;
+            gap: 1.6rem;
+
+            .created, .done {
+                justify-content: space-between;
+            }
+        }
+    }
+}

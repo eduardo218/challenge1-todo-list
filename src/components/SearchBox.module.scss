@@ -1,0 +1,51 @@
+.searchBoxContainer {
+    display: flex;
+    gap: .8rem;
+
+    margin-top: -2.7rem;
+    margin-bottom: 6.4rem;
+
+    input {
+        width: 100%;
+        border-radius: 8px;
+        padding: 1.6rem;
+
+        border: 1px solid var(--gray-700);
+        background: var(--gray-500);
+        color: var(--gray-100);
+
+        font-size: 1.6rem;
+    }
+
+    button {
+        width: 90px;
+        background: var(--blueDark);
+        color: var(--white);
+        font-weight: bold;
+
+        border-radius: 8px;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        cursor: pointer;
+
+        transition: background-color .1s;
+
+        &:hover {
+            background: var(--blue);
+        }
+    }
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+
+        button {
+            width: 100%;
+            height: 5.3rem;
+        }
+    }
+}
